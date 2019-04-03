@@ -15,7 +15,7 @@ public class ListExMain {
 		// 3. 종료
 
 		Scanner sc = new Scanner(System.in);
-		ArrayList ar = new ArrayList();
+		ArrayList<Member> ar = new ArrayList<Member>();
 		
 
 		while (true) {
@@ -27,7 +27,7 @@ public class ListExMain {
 
 			if (select == 1) {
 
-				new ListExInput().setInfo(ar);
+				new ListExInput().setInfo(ar);;
 				
 
 			} else if (select == 2) {

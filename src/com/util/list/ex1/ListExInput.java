@@ -8,22 +8,27 @@ public class ListExInput {
 	private Scanner sc;
 	
 	
+	
 	public ListExInput() {
 		
 		sc = new Scanner(System.in);
 		
 	}
 
-	public void setInfo(ArrayList ar) {
+	public void setInfo(ArrayList<Member> ar) {
 
+		Member member = new Member();
+		
+		
 		System.out.println("이름 입력");
 		String name = sc.next();
-		ar.add(name);
+		member.setName(name);
 
 		System.out.println("나이 입력");
 		int age = sc.nextInt();
-		ar.add(age);
+		member.setAge(age);
 		
+		ar.add(member);
 		
 
 	}
