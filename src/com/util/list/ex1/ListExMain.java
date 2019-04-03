@@ -16,6 +16,8 @@ public class ListExMain {
 
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Member> ar = new ArrayList<Member>();
+		ListExInput li = new ListExInput();
+		
 		
 
 		while (true) {
@@ -27,7 +29,8 @@ public class ListExMain {
 
 			if (select == 1) {
 
-				new ListExInput().setInfo(ar);;
+				Member m = li.setInfo();
+				ar.add(m);
 				
 
 			} else if (select == 2) {
